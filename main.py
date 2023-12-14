@@ -1,7 +1,7 @@
 import random
 import commands
 hiscomman = []
-
+#main menu code
 def printMenu():
     print("-----------------------------------------")
     print("star wars movie quotes ")
@@ -14,15 +14,17 @@ def printMenu():
     print("q\tQuit")
     print("------------------------------------------")
 
+#insert command code
 def menuGetCommand():
     return input("Enter a command: ").lower().strip()
-
+#where command gets excuted
 def executeCommand(command):
     global hiscomman
     success = True
    
-
+#the if states that make produce the the out come
     if command == 'i':
+        #here is where we get the code from the outside file
         word = random.choice(commands.comman)
         print("********************************")
         print(word)
@@ -59,7 +61,7 @@ def executeCommand(command):
 
     return success
 
-# main program
+
 command = '_'
 
 while command != 'q':
