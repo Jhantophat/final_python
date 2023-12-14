@@ -52,7 +52,7 @@ def executeCommand(command):
         print("Thank you for using the star wars movie qoutes")
 
     elif command == 'l':
-        for command in comman:
+        for command in commands.comman:
             print(command)
 
     else:
