@@ -16,3 +16,11 @@ the menu it self shows six possible possibilities:
 5.  history of qutes used
 6.  quit
 
+what they do?
+
+1. will produce a random quote, just enter "i" and you'll get one.
+2. this one will list all the quotes
+3. this one will undo a quote from the history
+4. as it says, it will redo the last quote that was shown
+5. this will show the history of quotes shown but the history list can be shorten by the undo command
+6. this will just stop the code till you rerun it.
