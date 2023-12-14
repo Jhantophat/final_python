@@ -31,32 +31,44 @@ def executeCommand(command):
         print("********************************")
         hiscomman.append(word)
 
-    elif command == 'r':
+   elif command == 'r':
         if hiscomman:
             lastCommand = hiscomman[-1]
+            print("********************************")
             print(lastCommand)
+            print("********************************")
             hiscomman.append(lastCommand)
         else:
+            print("********************************")
             print("No commands to redo")
+            print("********************************")
 
     elif command == 'u':
         if hiscomman:
             hiscomman.pop()
         else:
+            print("********************************")
             print("No commands to undo")
+            print("********************************")
 
     elif command == 'h':
         print(hiscomman)
 
     elif command == 'q':
+        print("********************************")
         print("Thank you for using the star wars movie qoutes")
+        print("********************************")
 
     elif command == 'l':
         for command in commands.comman:
+            print("********************************")
             print(command)
+            print("********************************")
 
     else:
+        print("********************************")
         print("ERROR: Unknown command")
+        print("********************************")
         success = False
 
     return success
